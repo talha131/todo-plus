@@ -1,3 +1,3 @@
-Assign highest priority to elements whichever is present from the list. If #A is absent then #B will get the highest priority and so on.
-Make function to move all done tasks down and bubble up undo tasks.
-Function to sort tasks according to the priority
+Assign highest priority to elements whichever is present from the list. If A is absent then B will get the highest priority and so on.
+Function to sort tasks according to the priority.
+x Make function to move all done tasks down and bubble up undo tasks.
