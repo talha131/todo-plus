@@ -3,8 +3,8 @@ syntax match todoDone "^x\s\p\+"
 " starts with c then space 
 syntax match todoCancelled "^c\s\p\+"
 " todo highest priority
-syntax match todohighestPrioroty "#A"
+syntax match todoHighestPrioroty "#A"
 
 highlight todoDone guifg=gray
 highlight todoCancelled guifg=DarkGray
-highlight todohighestPrioroty guifg=red
+highlight todoHighestPrioroty guifg=red
