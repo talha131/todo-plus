@@ -1,4 +1,11 @@
-command! ToDoToDo call BubbleUpTodo() 
+command! ToDoToDo call TriargeList()
+
+function! TriargeList()
+  call RemoveUndoneCount()
+  call BubbleUpTodo()
+  call WriteUndoneCount()
+  :write
+endfunction
 
 function! BubbleUpTodo()
   :global/^c\s/ move $
@@ -6,7 +13,6 @@ function! BubbleUpTodo()
   :global/^\(\(^x\s\|c\s\p\+\)\@!\p\{0,}\)#C\p\{0,}/ move 0
   :global/^\(\(^x\s\|c\s\p\+\)\@!\p\{0,}\)#B\p\{0,}/ move 0
   :global/^\(\(^x\s\|c\s\p\+\)\@!\p\{0,}\)#A\p\{0,}/ move 0
-  :write
 endfunction
 
 function! RemoveUndoneCount()
