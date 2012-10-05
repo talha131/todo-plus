@@ -9,3 +9,13 @@ function! BubbleUpTodo()
   :write
 endfunction
 
+
+function! WriteUndoneCount()
+  " put the count of lines that don't start with x or c in variable
+  redir => counter
+  silent %s/^\(\(^x\s\|^c\s\)\@!.\)*$//n
+  redir END
+
+  let result = printf("**** %s undone tasks ****", matchstr(counter, '\d\+'))
+  let failed = append(0, result)
+endfunction
