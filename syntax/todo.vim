@@ -3,9 +3,9 @@ syntax match todoDone "^x\s\p\+"
 " starts with c then space 
 syntax match todoCancelled "^c\s\p\+"
 " todo highest priority
-syntax match todoHighestPrioroty "#A\|#a"
-syntax match todoMediumPrioroty "#B\|#b"
-syntax match todoLowestPrioroty "#C\|#c"
+syntax match todoHighestPrioroty "#A\c"
+syntax match todoMediumPrioroty "#B\c"
+syntax match todoLowestPrioroty "#C\c"
 syntax match todoStatusLine "\*\{4}\s\d\+\sundone\stasks\s\*\{4}"
 
 highlight todoDone guifg=gray
