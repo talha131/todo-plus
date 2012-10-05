@@ -1,6 +1,6 @@
-command! ToDoToDo call TriargeList()
+command! ToDoToDo call TriageList()
 
-function! TriargeList()
+function! TriageList()
   call RemoveUndoneCount()
   call BubbleUpTodo()
   call WriteUndoneCount()
