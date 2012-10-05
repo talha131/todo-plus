@@ -9,6 +9,10 @@ function! BubbleUpTodo()
   :write
 endfunction
 
+function! RemoveUndoneCount()
+  " remove previous line if present
+  silent 1global/\*\{4} \d\+ undone tasks \*\{4}/ delete
+endfunction
 
 function! WriteUndoneCount()
   " put the count of lines that don't start with x or c in variable
