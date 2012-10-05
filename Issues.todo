@@ -1,3 +1,5 @@
+Show number of #A, #B, #C and without tags tasks in the status line. Use 25[#A] pattern
+Function to sort using a tag. It should offer tag completion
 c Assign highest priority to elements whichever is present from the list. If A is absent then B will get the highest priority and so on.
 x Function to sort tasks according to the priority.
 x Make function to move all done tasks down and bubble up undo tasks.
