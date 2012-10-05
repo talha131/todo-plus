@@ -6,9 +6,11 @@ syntax match todoCancelled "^c\s\p\+"
 syntax match todoHighestPrioroty "#A\|#a"
 syntax match todoMediumPrioroty "#B\|#b"
 syntax match todoLowestPrioroty "#C\|#c"
+syntax match todoStatusLine "\*\{4}\s\d\+\sundone\stasks\s\*\{4}"
 
 highlight todoDone guifg=gray
 highlight todoCancelled guifg=DarkGray
 highlight todoHighestPrioroty guifg=Red
 highlight todoMediumPrioroty guifg=DarkRed
 highlight todoLowestPrioroty guifg=LightRed
+highlight todoStatusLine gui=underline guifg=DarkBlue
