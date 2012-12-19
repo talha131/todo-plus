@@ -1,5 +1,18 @@
+**** 10 undone tasks ****
+Todo command gives error if it does not find other tags
+The syntax file does not work on terminal #a
+Don't change the order of entries that have the same priority #a
+    See how the sort is working by using numbers before each sentence
 Show number of #A, #B, #C and without tags tasks in the status line. Use 25[#A] pattern
+When I insert new line copy the priority tag from preceding line
 Function to sort using a tag. It should offer tag completion
+    How can I pass parameter from command line to a function
+    check is first line status line, if so then set line to 1 otherwise 0
+    move only those lines that do not start with x, c and do not have A,B,C and move them to 0
+    then move those that do not start with x,c and do not have A, B to 0
+    then , B
+    then A
 c Assign highest priority to elements whichever is present from the list. If A is absent then B will get the highest priority and so on.
+X is not moved down
 x Function to sort tasks according to the priority.
 x Make function to move all done tasks down and bubble up undo tasks.
