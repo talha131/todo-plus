@@ -1,7 +1,7 @@
 " starts with x then space 
-syntax match todoDone "^x\s\p\+"
+syntax match todoDone "^x\c\s\p\+"
 " starts with c then space 
-syntax match todoCancelled "^c\s\p\+"
+syntax match todoCancelled "^c\c\s\p\+"
 " todo highest priority
 syntax match todoHighestPrioroty "#A\c"
 syntax match todoMediumPrioroty "#B\c"
